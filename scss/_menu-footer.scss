@@ -1,0 +1,28 @@
+.menu-footer {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-footer__item {
+  &:not(:first-child) {
+    border-left: 1px solid #636363;
+  }
+}
+
+.menu-footer__link {
+  padding-inline: 13px;
+  font-size: var(--fs-200);
+  color: #6d6d6d;
+  text-decoration: none;
+
+  &--active {
+    color: #ffffff;
+  }
+
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
+    text-decoration: underline;
+  }
+}

@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optimax</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="main-header">
+    <header class="main-header">
       <div class="main-header__logo logo">
         Opti<span class="logo--text-black">max</span>
       </div>
@@ -26,14 +26,14 @@
           <li><a class="site-nav__link" href="#">Contact Us</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
 
     <div class="promo">
       <p class="promo__title">We create world-class, websites, icons & apps</p>
 
       <div class="promo__right-block">
-        <b class="promo__question">What are you waiting for? See our works!</b>
-        <a href="#" class="promo__btn">Get in touch</a>
+        <b class="promo__question">What are you waiting for? <br> See our works!</b>
+        <a href="#" class="promo__button">Get in touch</a>
       </div>
     </div>
 
@@ -46,20 +46,141 @@
       </ul>
     </div>
 
-    <section class="slider">
+    <div class="slider">
+      <button class="slider__prev" aria-label="prev"></button>
       <div class="slider__item">
+        <img class="slider__image-shadow" src="./img/shadow1.png" alt="">
+        <img class="slider__image slider__image--stopwatch" src="./img/timer.png" alt="Stopwatch">
         <a href="#" class="slider__link">More Icons</a>
       </div>
       <div class="slider__item">
+        <img class="slider__image-shadow" src="./img/shadow2.png" alt="">
+        <img class="slider__image slider__image--hat" src="./img/hat.png" alt="Hat">
         <a href="#" class="slider__link">More Icons</a>
       </div>
-    </section>
+      <button class="slider__next" aria-label="next"></button>
+    </div>
 
-    <!-- <div class="test">
-      <div class="t1"></div>
-      <div class="t2"></div>
-      <div class="t3"></div>
-    </div> -->
+    <div class="about">
+      <section class="about__welcome welcome">
+        <h2 class="welcome__title">Welcome to our website!</h2>
+        <p class="welcome__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in leo ac magna venenatis interdum
+          eu eu urna. In dignissim massa ut leo fermentum euismod non id massa.
+          Ut dignissim vulputate ante, vel imperdiet massa malesuada quis. Maecenas egestas congue est sed porta.
+        </p>
+        <p class="welcome__description">
+          In mollis erat eget lorem posuere id ultrices ipsum faucibus. Cras sit amet justo eget erat egestas
+          vehicula sed eu ipsum. Mauris aliquam massa faucibus mi cursus ut luctus magna pretium.
+        </p>
+        <p class="welcome__description">
+          Praesent nec porttitor neque. Proin blandit diam vel sapien placerat non cursus justo pharetra. Vivamus dui
+          dui, tristique quis feugiat vel, pharetra et justo.
+        </p>
+      </section>
+      <div class="about__advantages advantages">
+        <ul class="advantages__list">
+          <li class="advantages__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li class="advantages__item">In in leo ac magna venenatis interdum eu eu urna.</li>
+          <li class="advantages__item">In dignissim massa ut leo fermentum euismod non id massa.</li>
+          <li class="advantages__item">Ut dignissim vulputate ante, vel imperdiet massa malesuada quis.</li>
+          <li class="advantages__item">Maecenas egestas congue est sed porta.</li>
+          <li class="advantages__item">In mollis erat eget lorem posuere id ultrices ipsum faucibus.</li>
+        </ul>
+      </div>
+      <div class="about__update update">
+        <h2 class="update__title">News Updates</h2>
+        <ul class="update__list">
+          <li class="update__item">
+            <time class="update__date" datetime="2011-06-27">6/27/2011</time><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in leo ac magna venenatis interdum eu eu urna.
+          </li>
+          <li class="update__item">
+            <time class="update__date" datetime="2011-06-27">6/27/2011</time><br>
+            In dignissim massa ut leo fermentum euismod non id massa. Ut dignissim vulputate ante.
+          </li>
+          <li class="update__item">
+            <time class="update__date" datetime="2011-06-27">6/27/2011</time><br>
+            Vel imperdiet massa malesuada quis. Maecenas egestas congue est sed porta.
+          </li>
+          <li class="update__item">
+            <time class="update__date" datetime="2011-06-27">6/27/2011</time><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in leo ac magna venenatis interdum eu eu urna.
+          </li>
+          <li class="update__item">
+            <time class="update__date" datetime="2011-06-27">6/27/2011</time><br>
+            In dignissim massa ut leo fermentum euismod non id massa.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-us">
+      <div class="contact-us__wrap">
+        <a class="contact-us__email" href="mailto:hello@domain.com">hello@domain.com</a>
+        <a class="contact-us__phone" href="tel:+1234567890">+123-456-7890</a>
+        <div class="contact-us__outter-address">
+          <address class="contact-us__address">
+            1234 Lane, California <br> United States, 123486
+          </address>
+          <a class="contact-us__location" href="#">Map Location</a>
+        </div>
+      </div>
+      <div class="contact-us__follow">
+        <div class="contact-us__follow-card">
+          <p class="contact-us__follow-text">
+            Lorem ipsum dolor sit amet consectetur <a class="contact-us__follow-link" href="#">adipisicing elit</a>.
+            Qui, at!
+          </p>
+        </div>
+        <img class="contact-us__follow-img" src="img/follow.png" width="128" height="79" alt="Bird follow me">
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="main-footer__copyright-wrap">
+        <ul class="main-footer__menu menu-footer">
+          <li class="menu-footer__item">
+            <a class="menu-footer__link menu-footer__link--active">Home</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="#">Work</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="#">Services</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright">
+          © Copyright. Optimax. All rights reserved. Designed by <a href="#">GraphicsFuel</a>.
+        </div>
+      </div>
+
+      <ul class="main-footer__social social">
+        <li>
+          <a href="#" class="social__link">
+            <img src="img/twitter.png" width="32" height="32" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social__link">
+            <img src="img/facebook.png" width="32" height="32" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social__link">
+            <img src="img/wikiwand.png" width="32" height="32" alt="Wikiwand">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social__link">
+            <img src="img/deviantart.png" width="32" height="32" alt="Deviantart">
+          </a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </body>
 

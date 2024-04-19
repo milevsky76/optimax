@@ -1,0 +1,59 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 55px;
+}
+
+.promo__title {
+  width: 660px;
+  margin: 0;
+  font-family: 'Designosaur', sans-serif;
+  font-size: var(--fs-900);
+  text-shadow: 0 2px 3px rgba(52 43 36 / 0.75);
+}
+
+.promo__right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 244px;
+}
+
+.promo__question {
+  margin-bottom: 24px;
+  font-size: var(--fs-600);
+  font-weight: normal;
+  color: #c0c0c0;
+}
+
+.promo__button {
+  position: relative;
+  display: inline-block;
+  min-width: 244px;
+  min-height: 56px;
+  padding: 10px 45px 10px 30px;
+  font-size: var(--fs-700);
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 7px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 15px;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #7a9e1a;
+  }
+}

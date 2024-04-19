@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  font-family: 'Designosaur', sans-serif;
+  font-size: var(--fs-800);
+  text-shadow: 0 2px 5px rgba(51 42 36 / 0.75);
+
+  &--text-black {
+    color: #000000;
+  }
+}

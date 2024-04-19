@@ -1,0 +1,23 @@
+.welcome {
+  padding: 30px 40px;
+  background-color: #917c44;
+  border-top: 11px solid #c83e22;
+}
+
+.welcome__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: var(--fs-700);
+}
+
+.welcome__description {
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-200);
+  line-height: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

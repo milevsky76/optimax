@@ -1,0 +1,33 @@
+.advantages {
+  padding: 20px 15px;
+  background-color: #e9d493;
+  border-top: 11px solid #f48949;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 25px;
+  font-size: var(--fs-300);
+  color: #191919;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 13px;
+    background-image: url('../img/check-mark.png');
+    background-repeat: no-repeat;
+  }
+}
